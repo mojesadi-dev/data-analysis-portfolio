@@ -1,4 +1,4 @@
-# Phase 2 — Data Understanding & Data Assessment
+# Phase 2 - Data Understanding & Data Assessment
 
 ## 1. Dataset Overview
 
