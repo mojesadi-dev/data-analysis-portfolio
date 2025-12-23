@@ -1,4 +1,4 @@
-# Retail Sales Analytics — Phase 1: Problem Understanding
+# Retail Sales Analytics - Phase 1: Problem Understanding
 
 ## 1. Business Problem
 Daily sales data from multiple sources (POS, online store, and branch systems) are inconsistent, incomplete, or sometimes duplicated. Store managers cannot easily see sales trends, top-selling products, customer behaviour, or inventory status. This makes decision-making slow and error-prone.
