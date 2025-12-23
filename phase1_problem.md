@@ -44,6 +44,7 @@ The goal of this project is to:
 5. Insights are visualized in a Power BI dashboard
 6. Reports and dashboards are used by management and marketing teams
 
+![Activity Diagram](ActivityDiagram.jpg)
 ---
 
 > **Note:** This document represents Phase 1 (Problem Understanding & Initial Analysis) of the Retail Sales Analytics project. All data, KPIs, and workflow details are preliminary and will be refined in the next phases (Data Cleaning, SQL Analysis, and Dashboard Development).
