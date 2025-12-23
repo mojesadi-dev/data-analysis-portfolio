@@ -1,19 +1,16 @@
-# Data Dictionary — Sample Superstore Dataset
+## Data Dictionary (Key Fields)
 
-This document describes the structure and meaning of each column in the Sample Superstore dataset used in the Retail Sales Analytics project.
+| Column Name   | Description                        | Type     |
+|---------------|------------------------------------|----------|
+| Order ID      | Unique identifier for each order   | String   |
+| Order Date    | Date when the order was placed     | Date     |
+| Ship Date     | Date when the order was shipped    | Date     |
+| Customer ID   | Unique customer identifier         | String   |
+| Segment       | Customer segmentation              | Categorical |
+| Category      | Product category                   | Categorical |
+| Sub-Category  | Product sub-category               | Categorical |
+| Sales         | Sales amount per line item         | Numeric  |
+| Quantity      | Number of units sold               | Integer  |
+| Discount      | Discount applied                   | Numeric  |
+| Profit        | Profit generated                   | Numeric  |
 
- Column Name  Description  Data Type 
-----------------------------------
- Order ID  Unique order identifier  String 
- Order Date  Order placement date  Date 
- Ship Date  Shipping date  Date 
- Customer ID  Customer identifier  String 
- Customer Name  Customer name  String 
- Segment  Customer segment  String 
- Category  Product category  String 
- Sub-Category  Product sub-category  String 
- Product Name  Product name  String 
- Sales  Sales amount  Numeric 
- Quantity  Quantity sold  Integer 
- Discount  Discount applied  Numeric 
- Profit  Profit value  Numeric 
