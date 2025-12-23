@@ -1,33 +1,43 @@
-# Phase 2 - Data Understanding & Data Assessment
+# 🔍 Phase 2 - Data Understanding & Data Assessment
 
-## 1. Dataset Overview
+## 📦 1. Dataset Overview
 
 **Dataset Name:** Sample - Superstore  
 **Domain:** Retail Sales  
 **Format:** Excel  
 **Granularity:** Order line-item level  
 
-The dataset represents historical retail sales transactions. Each record corresponds to a product-level entry within a customer order. The data includes order information, customer attributes, product hierarchy, sales metrics, and profitability measures.
+The dataset represents historical retail sales transactions. Each record corresponds to a product-level entry within a customer order. The data contains information related to orders, customers, products, geography, and sales performance metrics.
 
-This phase focuses on understanding the structure, scope, and quality of the data before performing any cleaning or transformation.
+The primary objective of this phase is to understand the dataset structure, scope, and data quality before proceeding to data cleaning and transformation.
 
 ---
 
-## 2. Data Structure Summary
+## 🧱 2. Data Structure Summary
 
 The dataset consists of the following logical groups of fields:
 
-- **Order Information:** Order ID, Order Date, Ship Date, Ship Mode  
-- **Customer Information:** Customer ID, Customer Name, Segment  
-- **Geographical Information:** Country, Region, State, City, Postal Code  
-- **Product Information:** Category, Sub-Category, Product Name  
-- **Sales Metrics:** Sales, Quantity, Discount, Profit  
+- **🧾 Order Information:** Order ID, Order Date, Ship Date, Ship Mode  
+- **👤 Customer Information:** Customer ID, Customer Name, Segment  
+- **🌍 Geographical Information:** Country, Region, State, City, Postal Code  
+- **📦 Product Information:** Category, Sub-Category, Product Name  
+- **💰 Sales Metrics:** Sales, Quantity, Discount, Profit  
 
-The dataset structure is suitable for both transactional analysis and aggregated reporting.
+This structure supports both transactional-level analysis and aggregated reporting across multiple business dimensions.
 
 ---
 
-## 3. Data Dictionary
+## 🗺️ 3. Dataset Structure Visualization
+
+![Treemap of Dataset Structure](images/phase2_treemap.png)
+
+This treemap provides a high-level visual overview of the dataset by grouping columns into logical business domains. It helps illustrate the relative composition of the dataset and supports a faster conceptual understanding of how different types of data are distributed.
+
+*Figure 1: Treemap illustrating the dataset structure across order, customer, geography, product, and sales metric dimensions.*
+
+---
+
+## 📘 4. Data Dictionary
 
 | Column Name     | Description                                      | Data Type |
 |-----------------|--------------------------------------------------|-----------|
@@ -53,50 +63,51 @@ The dataset structure is suitable for both transactional analysis and aggregated
 
 ---
 
-## 4. Missing Values Assessment
+## ⚠️ 5. Missing Values Assessment
 
-A preliminary assessment of missing values was performed across all columns.
+A preliminary assessment of missing values was conducted across all columns.
 
-- Most core transactional and sales-related fields are fully populated.
-- Missing values were observed primarily in specific geographical attributes (e.g. postal code).
-- No critical sales metrics (Sales, Quantity, Profit) were found to be missing.
-
-**Observation:**  
-Missing geographic attributes may affect location-based aggregation and mapping but do not prevent overall sales or trend analysis.
-
----
-
-## 5. Duplicate Records Assessment
-
-Duplicate checks were performed at different levels:
-
-- No fully identical rows were identified.
-- Repeated Order IDs were observed, which is expected due to the line-item structure of retail transactions where a single order can contain multiple products.
+- Core transactional and sales-related fields are fully populated.
+- Missing values are primarily observed in certain geographical attributes, such as **Postal Code**.
+- No missing values were detected in critical metrics such as **Sales**, **Quantity**, or **Profit**.
 
 **Observation:**  
-Duplicate Order IDs do not indicate data quality issues and should be handled appropriately during aggregation and KPI calculations.
+Missing geographic attributes may affect location-based analysis or mapping but do not limit overall sales, profitability, or trend analysis.
 
 ---
 
-## 6. Data Type and Format Review
+## 🧬 6. Duplicate Records Assessment
 
-- Date fields are consistently represented and suitable for time-based analysis.
-- Numeric fields (Sales, Profit, Quantity, Discount) contain valid numeric values.
-- Categorical fields show consistent labeling, though minor standardization (e.g. casing, trimming) may be required.
-- Postal Code is stored as a string to preserve leading zeros where applicable.
+Duplicate checks were performed at multiple levels:
 
----
+- No fully duplicated rows were identified.
+- Repeated **Order ID** values were observed, which is expected due to the line-item nature of the dataset (one order may contain multiple products).
 
-## 7. Key Observations for Data Cleaning Phase
-
-Based on the data assessment:
-
-- Minor missing values require handling in selected columns.
-- Categorical fields may require standardization.
-- Aggregation logic must account for line-item granularity.
-- The dataset is suitable for KPI calculation, trend analysis, and dashboard development after cleaning.
+**Observation:**  
+Repeated Order IDs do not indicate data quality issues and should be handled correctly during aggregation and KPI calculations.
 
 ---
 
-**Outcome of Phase 2:**  
-The dataset structure, limitations, and data quality considerations have been identified and documented. The project is ready to proceed to the data cleaning and preparation phase.
+## 🧪 7. Data Type and Format Review
+
+- Date fields are consistently formatted and suitable for time-based analysis.
+- Numeric fields (**Sales**, **Profit**, **Quantity**, **Discount**) contain valid numeric values.
+- Categorical fields show consistent labeling, though minor standardization (e.g., casing or trimming whitespace) may be required.
+- **Postal Code** is stored as a string to preserve leading zeros.
+
+---
+
+## 🧠 8. Key Observations for Data Cleaning Phase
+
+Based on the data assessment performed in this phase:
+
+- Minor missing values require appropriate handling strategies.
+- Categorical fields may require normalization and standardization.
+- Aggregation logic must account for the line-item granularity of the data.
+- The dataset is well-structured and suitable for KPI calculation, trend analysis, and dashboard development after cleaning.
+
+---
+
+### ✅ Outcome of Phase 2
+
+The dataset structure, data quality considerations, and potential limitations have been identified and documented. The project is now ready to proceed to **Phase 3 – Data Cleaning & Preparation**.
