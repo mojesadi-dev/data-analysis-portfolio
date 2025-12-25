@@ -1,7 +1,7 @@
 # 🛒 Retail Sales Analytics - Phase 4: KPI Calculation & Analysis
 
 **Project:** Retail Sales Analytics  
-**Dataset:** Sample – Superstore  
+**Dataset:** Sample - Superstore  
 **Phase Objective:** Calculate key business KPIs from the cleaned dataset and prepare insights for visualization.
 
 ---
