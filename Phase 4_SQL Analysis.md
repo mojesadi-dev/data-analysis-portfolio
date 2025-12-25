@@ -30,6 +30,7 @@ SELECT
     AVG(Discount) AS Avg_Discount,
     SUM(Profit)/SUM(Sales) AS Profit_Margin
 FROM Cleaned_Sales;
+# KPI Analysis
 
 **Output:**  
 | Total_Sales | Total_Profit | Total_Quantity | Avg_Discount | Profit_Margin |
