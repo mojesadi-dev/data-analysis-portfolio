@@ -30,7 +30,7 @@ SELECT
     AVG(Discount) AS Avg_Discount,
     SUM(Profit)/SUM(Sales) AS Profit_Margin
 FROM Cleaned_Sales;
-```sql
+```
 # KPI Analysis
 
 **Output:**  
