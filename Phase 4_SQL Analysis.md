@@ -22,6 +22,7 @@ The objective of Phase 4 is to analyze the cleaned dataset and calculate the mai
 
 ### KPI 1 – Total Sales / Profit / Quantity
 **SQL Query:**  
+```sql
 SELECT 
     SUM(Sales) AS Total_Sales,
     SUM(Profit) AS Total_Profit,
