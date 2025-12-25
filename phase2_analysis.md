@@ -1,4 +1,4 @@
-# 🔍 Phase 2 - Data Understanding & Data Assessment
+# 🔍 Retail Sales Analytics - Phase 2: Data Understanding & Data Assessment
 
 ## 📦 1. Dataset Overview
 
