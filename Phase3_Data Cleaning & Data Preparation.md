@@ -1,4 +1,4 @@
-# 🧹 Phase 3 - Data Cleaning & Data Preparation
+# 🧹 Retail Sales Analytics - Phase 3: Data Cleaning & Data Preparation
 **Project:** Retail Sales Analytics  
 **Dataset:** Sample – Superstore  
 **Phase Objective:** Prepare high-quality, analytics-ready data for KPI calculation and dashboard development  
