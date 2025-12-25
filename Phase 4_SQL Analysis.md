@@ -22,7 +22,13 @@ The objective of Phase 4 is to analyze the cleaned dataset and calculate the mai
 
 ### KPI 1 – Total Sales / Profit / Quantity
 **SQL Query:**  
-*To be added*
+SELECT 
+    SUM(Sales) AS Total_Sales,
+    SUM(Profit) AS Total_Profit,
+    SUM(Quantity) AS Total_Quantity,
+    AVG(Discount) AS Avg_Discount,
+    SUM(Profit)/SUM(Sales) AS Profit_Margin
+FROM Cleaned_Sales;
 
 **Output:**  
 | Total_Sales | Total_Profit | Total_Quantity | Avg_Discount | Profit_Margin |
