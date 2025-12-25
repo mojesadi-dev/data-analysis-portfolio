@@ -1,4 +1,4 @@
-# 🛒 Retail Sales Analytics – Phase 4: KPI Calculation & Analysis
+# 🛒 Retail Sales Analytics - Phase 4: KPI Calculation & Analysis
 
 **Project:** Retail Sales Analytics  
 **Dataset:** Sample – Superstore  
