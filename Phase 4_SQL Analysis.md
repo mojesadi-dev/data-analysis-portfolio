@@ -49,8 +49,16 @@ FROM Cleaned_Sales;
 
 ### KPI 2 – Sales by Product Category / Sub-Category
 **SQL Query:**  
-*To be added*
-
+```sql
+SELECT 
+    Category,
+    Sub_Category,
+    SUM(Sales) AS Sales,
+    SUM(Profit) AS Profit
+FROM Cleaned_Sales
+GROUP BY Category, Sub_Category
+ORDER BY Sales DESC;
+```
 **Output:**  
 | Category         | Sub_Category | Sales      | Profit    |
 |-----------------|-------------|-----------|-----------|
@@ -79,8 +87,15 @@ FROM Cleaned_Sales;
 
 ### KPI 3 – Sales by Region
 **SQL Query:**  
-*To be added*
-
+```sql
+SELECT 
+    Region,
+    SUM(Sales) AS Sales,
+    SUM(Profit) AS Profit
+FROM Cleaned_Sales
+GROUP BY Region
+ORDER BY Sales DESC;
+```
 **Output:**  
 | Region  | Sales      | Profit     |
 |---------|-----------|-----------|
@@ -97,8 +112,15 @@ FROM Cleaned_Sales;
 
 ### KPI 4 – Top Customers
 **SQL Query:**  
-*To be added*
-
+```sql
+SELECT top 10
+    Customer_Name,
+    SUM(Sales) AS Total_Sales,
+    SUM(Profit) AS Total_Profit
+FROM Cleaned_Sales
+GROUP BY Customer_Name
+ORDER BY Total_Sales DESC;
+```
 **Output:**  
 | Customer_Name | Total_Sales | Total_Profit |
 |---------------|------------|--------------|
@@ -121,8 +143,16 @@ FROM Cleaned_Sales;
 
 ### KPI 5 – Monthly Sales Trend
 **SQL Query:**  
-*To be added*
-
+```sql
+SELECT 
+    Order_Year,
+    Order_Month,
+    SUM(Sales) AS Monthly_Sales,
+    SUM(Profit) AS Monthly_Profit
+FROM Cleaned_Sales
+GROUP BY Order_Year, Order_Month
+ORDER BY Order_Year, Order_Month;
+```
 **Output:**  
 | Order_Year | Order_Month | Monthly_Sales | Monthly_Profit |
 |------------|------------|---------------|----------------|
@@ -152,7 +182,14 @@ FROM Cleaned_Sales;
 
 ### KPI 6 – Profit Margin by Category
 **SQL Query:**  
-*To be added*
+```sql
+SELECT 
+    Category,
+    SUM(Profit)/SUM(Sales) AS Profit_Margin
+FROM Cleaned_Sales
+GROUP BY Category
+ORDER BY Profit_Margin DESC;
+```
 
 **Output:**  
 | Category         | Profit_Margin |
@@ -169,8 +206,14 @@ FROM Cleaned_Sales;
 
 ### KPI 7 – Discount Analysis by Segment
 **SQL Query:**  
-*To be added*
-
+```sql
+SELECT 
+    Segment,
+    AVG(Discount) AS Avg_Discount,
+    SUM(Sales) AS Total_Sales
+FROM Cleaned_Sales
+GROUP BY Segment;
+```
 **Output:**  
 | Segment     | Avg_Discount | Total_Sales |
 |------------|--------------|-------------|
