@@ -8,7 +8,7 @@
 
 ## 🖥️ Dashboard Overview
 
-The dashboard consists of **three main pages**, each designed for a specific business perspective:
+The dashboard consists of **four main pages**, each designed for a specific business perspective:
 
 ### 1️⃣ Page 1: Executive Overview (General Performance)
 - **Navigation & Filters:** Left-hand sidebar with slicers for **Region**, **Category**, and **Sub-Category** for global report filtering.
