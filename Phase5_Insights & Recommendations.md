@@ -31,8 +31,9 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 - **Geographical Granularity:** Bar/Table chart "Sales by City".  
 - **Product Distribution:** Sub-Category performance by region.  
 
-**Screenshot Preview:**  
-![Region & Customers](images/RegionCustomers.png)
+## Region & Customers Analysis
+![Region & Customers](images/Region & Customers.png)
+
 
 ---
 
@@ -41,8 +42,8 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 - **Segment Analysis:** Donut/Bar chart for "Profit Margin by Segment" (Consumer, Corporate, Home Office).  
 - **Profit vs. Sales Comparison:** Charts highlighting high-sales but low-margin areas to identify inefficiencies.  
 
-**Screenshot Preview:**  
-![Profit Analysis](mages/ProfitAnalysis.png)
+## Profit Analysis
+![Profit Analysis](images/Profit Analysis.png)
 
 ---
 
