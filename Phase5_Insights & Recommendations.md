@@ -32,7 +32,7 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 - **Product Distribution:** Sub-Category performance by region.  
 
 **Screenshot Preview:**  
-![Region & Customers](Project/images/RegionCustomers.png)
+![Region & Customers](images/RegionCustomers.png)
 
 ---
 
@@ -42,7 +42,7 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 - **Profit vs. Sales Comparison:** Charts highlighting high-sales but low-margin areas to identify inefficiencies.  
 
 **Screenshot Preview:**  
-![Profit Analysis](Project/images/ProfitAnalysis.png)
+![Profit Analysis](mages/ProfitAnalysis.png)
 
 ---
 
