@@ -52,13 +52,28 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 - **Derived Fields:** Profit Margin, Order Year/Month, Order Quarter, etc., for trend and KPI analysis.
 
 ---
-
 ## 📂 Power BI File Placement
 
 The Power BI report file is included in the repository for download:
 [Download Power BI File](Retail_Sales_Analytics.pbix)
 
+---
 
+## 💡 Strategic Recommendations
+
+After analyzing the KPIs and advanced SQL outputs, here are the strategic recommendations for the business:
+
+#### 1. Optimization of High-Cost Shipping
+* **Insight:** "First Class" shipping has the lowest profit margin (35.9%) despite high sales volume.
+* **Recommendation:** Conduct a cost-benefit analysis on expedited shipping. Consider increasing the minimum order value for "First Class" to protect margins or renegotiating contracts with carriers.
+
+#### 2. Targeted Marketing for High-Margin Sub-Categories
+* **Insight:** Using SQL Ranking, "Chairs" and "Bookcases" were identified as margin leaders (#1 in their categories).
+* **Recommendation:** Shift marketing budget from low-margin items (like "Phones") to these high-performing sub-categories. Increasing the visibility of Rank 1 & 2 products will improve overall net profit.
+
+#### 3. Regional Inventory Adjustment
+* **Insight:** "Standard Class" shipping generates the bulk of stable profit with a consistent 1-day delay.
+* **Recommendation:** Optimize inventory levels in regional hubs (West/East) to maintain this efficiency, as this shipping mode is the primary driver of sustainable and profitable revenue.
 ---
 
 ## ✅ Phase 5 Outcome
