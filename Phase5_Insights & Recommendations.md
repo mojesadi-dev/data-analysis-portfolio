@@ -44,6 +44,13 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 ![Profit Analysis](images/Profit%20Analysis.png)
 
 ---
+### 4️⃣ Page 4: Advanced Insights 
+
+- **Logistics Efficiency:** A Combo Chart (Total Sales & Avg Profit Margin by Ship Mode) visualizing the correlation between shipping speed and net profitability.
+- **Sub-Category Ranking:** A ranked bar chart identifying the most profitable niches, directly visualizing the SQL Ranking (KPI 9) analysis.
+- **Key Findings:** Highlighting the margin drop in "First Class" shipping (approx. 21%) and the top-tier profitability of "Bookcases" and "Chairs".
+  
+---
 
 ## ⚙️ Technical Design Elements
 - **Unified Theme:** Professional blue & white color palette for readability.  
@@ -64,7 +71,7 @@ The Power BI report file is included in the repository for download:
 After analyzing the KPIs and advanced SQL outputs, here are the strategic recommendations for the business:
 
 #### 1. Optimization of High-Cost Shipping
-* **Insight:** "First Class" shipping has the lowest profit margin (35.9%) despite high sales volume.
+* **Insight:** "First Class" shipping has the lowest profit margin (21%) despite high sales volume.
 * **Recommendation:** Conduct a cost-benefit analysis on expedited shipping. Consider increasing the minimum order value for "First Class" to protect margins or renegotiating contracts with carriers.
 
 #### 2. Targeted Marketing for High-Margin Sub-Categories
