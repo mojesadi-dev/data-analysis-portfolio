@@ -56,7 +56,7 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 ## 📂 Power BI File Placement
 
 The Power BI report file is included in the repository for download:
-![Profit Analysis](Project/Retail_Sales_Analytics.pbix)
+[Download Power BI File](Retail_Sales_Analytics.pbix)
 
 
 ---
