@@ -155,4 +155,4 @@ This project is part of my **Data Analytics Portfolio**.
 For inquiries or collaboration, contact me via GitHub.
 
 ---
-
+“© 2025 Mojesadi – Portfolio Project. Do not reuse without permission.”
