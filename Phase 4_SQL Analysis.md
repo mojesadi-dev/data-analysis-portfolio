@@ -279,6 +279,7 @@ GROUP BY Category, Sub_Category;
 | **Technology** | Paper | 0.4630 | 3 |
 | **Technology** | Phone | 0.3493 | 4 |
 | **Technology** | Table | 0.2944 | 5 |
+
 **Insight / Observation:**  
 - *Chairs* (Furniture) and *Bookcases* (Technology) are the most profitable niches, ranking **#1 in their categories by margin**.  
 - *Phones* generate high sales volume but rank **4th in profitability**, showing that high revenue does not always mean high margins.  
