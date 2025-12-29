@@ -22,7 +22,7 @@ This project reflects real-world retail analytics challenges and solutions, suit
 ---
 
 ## 📂 Repository Structure
-
+```
 Retail_Sales_Analytics/
 ├── images/
 │ ├── Executive Overview.png
@@ -37,7 +37,7 @@ Retail_Sales_Analytics/
 ├── Phase5_Insights & Recommendations.md
 ├── Retail_Sales_Analytics.pbix
 └── README.md
-
+```
 
 > All files are fully documented and organized for each phase of the project.
 
@@ -89,22 +89,25 @@ Retail_Sales_Analytics/
 
 ---
 
-### **Phase 4 – KPI Calculation & Analysis**
-- **SQL-based KPI Calculations:**  
-| KPI | Value |
-| --- | --- |
-| Total Sales | 475,578.99 |
-| Total Profit | 108,482.59 |
-| Total Quantity | 4,636 |
-| Average Discount | 15.6% |
-| Profit Margin | 22.8% |
+### Phase 4 – KPI Calculation & Analysis
 
-- **Insights:**  
-  - Top-selling product: Office Supplies – Bookcase  
-  - High-profit but lower sales: Furniture – Bookcase  
-  - Highest sales region: West; lowest: South  
-  - Some customers show negative profits (returns/high discounts)  
-  - Monthly trends indicate seasonal fluctuations  
+**SQL-based KPI Calculations:**
+
+| KPI               | Value      |
+| ----------------- | ---------- |
+| Total Sales       | 475,578.99 |
+| Total Profit      | 108,482.59 |
+| Total Quantity    | 4,636      |
+| Average Discount  | 15.6%      |
+| Profit Margin     | 22.8%      |
+
+**Insights:**
+- Top-selling product: Office Supplies – Bookcase
+- High-profit but lower sales: Furniture – Bookcase
+- Highest sales region: West; lowest: South
+- Some customers show negative profits (returns/high discounts)
+- Monthly trends indicate seasonal fluctuations
+
 
 - **Additional KPI Analysis:**  
   - Profit Margin by Category: Office Supplies > Technology > Furniture  
