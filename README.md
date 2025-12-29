@@ -102,6 +102,9 @@ Retail_Sales_Analytics/
 | Average Discount  | 15.6%      |
 | Profit Margin     | 22.8%      |
 
+
+**Note:** SQL KPIs (Phase 4) cover the full dataset, whereas the Dashboard (Phase 5) is filtered for **Jan 2021 – May 2022** to focus on recent strategic trends.
+
 **Insights:**
 - Top-selling product: Office Supplies – Bookcase
 - High-profit but lower sales: Furniture – Bookcase
