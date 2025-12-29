@@ -20,7 +20,7 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 - **Time Series Analysis:** Area/Line chart for "Sales and Profit by Order Year and Month" (Jan 2021 – May 2022).  
 - **Categorical Performance:** Bar & Line chart "Sales and Profit by Category" (Furniture, Office Supplies, Technology).  
 
-**Screenshot Preview:**  
+## Executive Overview
 ![Executive Overview](images/Executive Overview.png)
 
 ---
