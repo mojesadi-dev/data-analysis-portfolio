@@ -116,11 +116,11 @@ Retail_Sales_Analytics/
 - **Power BI File:** [Retail_Sales_Analytics.pbix](./Retail_Sales_Analytics.pbix)  
 - **Dashboard Pages:**  
   1. **Executive Overview** – KPIs, Sales & Profit trends, Category performance  
-     ![Executive Overview](./images/Executive Overview.png)  
+     ![Executive Overview](./images/Executive%20Overview.png)  
   2. **Region & Customers** – Sales by Region, Top 10 Customers, City-level performance  
-     ![Region & Customers](./images/Region & Customers.png)  
+     ![Region & Customers](./images/Region%20&%20Customers.png)  
   3. **Profit Analysis** – Profit Margin by Category/Segment, Profit vs Sales comparison  
-     ![Profit Analysis](./images/Profit Analysis.png)
+     ![Profit Analysis](./images/Profit%20Analysis.png)
 
 - **Technical Highlights:**  
   - Fully interactive cross-filtering across all visuals  
