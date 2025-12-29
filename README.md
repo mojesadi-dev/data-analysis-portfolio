@@ -28,6 +28,7 @@ Retail_Sales_Analytics/
 │ ├── Executive Overview.png
 │ ├── Profit Analysis.png
 │ ├── Region & Customers.png
+│ ├── Advanced Insights.png
 │ └── phase2_treemap.png
 ├── ActivityDiagram.jpg
 ├── phase1_problem.md
@@ -124,6 +125,10 @@ Retail_Sales_Analytics/
      ![Region & Customers](./images/Region%20&%20Customers.png)  
   3. **Profit Analysis** – Profit Margin by Category/Segment, Profit vs Sales comparison  
      ![Profit Analysis](./images/Profit%20Analysis.png)
+  4. **Strategic Insights** – Logistics efficiency (Combo Chart) and Sub-Category Profitability Ranking  
+     ![Advanced Insights](./images/Advanced%20Insights.png)
+    
+---
 
 - **Technical Highlights:**  
   - Fully interactive cross-filtering across all visuals  
@@ -133,13 +138,13 @@ Retail_Sales_Analytics/
 
 ---
 
-## 📊 Key Outcomes
+## 📊 Key Outcomes & Strategic Insights
 
-- Fully cleaned and validated dataset  
-- Comprehensive KPI calculations and SQL documentation  
-- Interactive Power BI dashboard for executive decisions  
-- Actionable insights for management, marketing, and inventory teams  
-
+- **Logistics Efficiency:** Identified that **First Class** shipping has a lower profit margin (~21%) despite high volume, suggesting a need for cost optimization.
+- **Product Profitability:** "Bookcases" and "Chairs" were identified as top-tier margin contributors.
+- **Data Integrity:** Fully cleaned and validated dataset with consistent KPI tracking between SQL and Power BI.
+- **Decision Support:** Interactive dashboard providing actionable insights for logistics, marketing, and inventory teams.
+  
 ---
 
 ## 🚀 Future Work / Phase 6
@@ -152,7 +157,7 @@ Retail_Sales_Analytics/
 ## 📬 Contact / More Info
 
 This project is part of my **Data Analytics Portfolio**.  
-For inquiries or collaboration, contact me via GitHub.
+For inquiries or collaboration, contact me via sadeghian.mz@gmail.com.
 
 ---
 “© 2025 Mojesadi – Portfolio Project. Do not reuse without permission.”
