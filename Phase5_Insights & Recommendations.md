@@ -21,7 +21,7 @@ The dashboard consists of **three main pages**, each designed for a specific bus
 - **Categorical Performance:** Bar & Line chart "Sales and Profit by Category" (Furniture, Office Supplies, Technology).  
 
 **Screenshot Preview:**  
-![Executive Overview](Project/images/Executive Overview.png)
+![Executive Overview](path/to/Executive Overview.png)
 
 ---
 
