@@ -43,12 +43,12 @@ FROM (
 | Total_Sales | Total_Profit | Total_Quantity | Avg_Discount | Profit_Margin |
 |-------------|-------------|----------------|--------------|---------------|
 | 256646.38   | 58577.34   | 2525           | 0.15625      | 0.2281        |
-256646.38	58577.34	2525
+		
 
 **Insight / Observation:**  
-- Total sales: 475,578.99  
-- Total profit: 108,482.59  
-- Total quantity sold: 4,636  
+- Total sales: 256646.38  
+- Total profit: 58577.34  
+- Total quantity sold: 2525  
 - Average discount: ~15.6%  
 - Profit margin: ~22.8%  
 
