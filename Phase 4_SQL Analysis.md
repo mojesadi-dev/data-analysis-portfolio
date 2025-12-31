@@ -266,21 +266,21 @@ GROUP BY Category, Sub_Category;
 **Output:** 
 | Category | Sub-Category | Avg Margin | Margin Rank |
 | :--- | :--- | :--- | :--- |
-| **Furniture** | Bookcase	0.28 | 1 |
-| **Furniture** | Paper	0.23 | 2 |
-| **Furniture** | Chair	0.21 | 3 |
-| **Furniture** | Phone	0.19 | 4 |
-| **Furniture** | Table	0.14 | 5 |
-| **Office Supplies	Table** | 0.25 | 1 |
-| **Office Supplies	Phone** | 0.25 | 2 |
-| **Office Supplies	Chair** | 0.24 | 3 |
-| **Office Supplies	Bookcase** | 0.23 | 4 |
-| **Office Supplies	Paper** | 0.23 | 5 |
-| **Technology	Bookcase** | 0.25 | 1 |
-| **Technology	Chair** | 0.24 | 2 |
-| **Technology	Phone** | 0.23 | 3 |
-| **Technology	Paper** | 0.20 | 4 |
-| **Technology	Table** | 0.20 | 5 |
+| **Furniture** | Bookcase | 0.28 | 1 |
+| **Furniture** | Paper | 0.23 | 2 |
+| **Furniture** | Chair | 0.21 | 3 |
+| **Furniture** | Phone | 0.19 | 4 |
+| **Furniture** | Table | 0.14 | 5 |
+| **Office Supplies** | Table | 0.25 | 1 |
+| **Office Supplies** | Phone | 0.25 | 2 |
+| **Office Supplies** | Chair | 0.24 | 3 |
+| **Office Supplies** | Bookcase | 0.23 | 4 |
+| **Office Supplies** | Paper | 0.23 | 5 |
+| **Technology** | Bookcase | 0.25 | 1 |
+| **Technology** | Chair | 0.24 | 2 |
+| **Technology** | Phone | 0.23 | 3 |
+| **Technology** | Paper | 0.20 | 4 |
+| **Technology** | Table | 0.20 | 5 |
 
 **Insight / Observation:**  
 - *Chairs* (Furniture) and *Bookcases* (Technology) are the most profitable niches, ranking **#1 in their categories by margin**.  
