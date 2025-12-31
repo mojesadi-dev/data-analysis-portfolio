@@ -8,16 +8,15 @@
 ---
 
 ## 📌 Project Overview
+This project demonstrates the end-to-end Data Analytics lifecycle in a retail context, starting from raw sales data from multiple sources and culminating in actionable insights through an interactive Power BI dashboard. The workflow covers:
 
-This project demonstrates the **end-to-end Data Analytics lifecycle** in a retail context, starting from raw sales data from multiple sources and culminating in actionable insights through an interactive Power BI dashboard. The workflow covers:
+- **Problem Understanding** – Identify business challenges, define goals, stakeholders, assumptions, and preliminary KPIs.  
+- **Data Understanding & Assessment** – Explore dataset structure, check data quality, missing values, duplicates, and understand granularity.  
+- **Data Cleaning & Preparation** – Standardize, clean, and enrich data; create derived features for analysis.  
+- **KPI Calculation & Analysis** – Compute key business KPIs (Sales, Profit, Quantity, Profit Margin), analyze trends, top customers, products, and regions.  
+- **Dashboard Development & Visualization** – Build an interactive Power BI dashboard for executive, regional, and profitability analysis.  
 
-1. **Problem Understanding** – Identify business challenges, define goals, stakeholders, assumptions, and preliminary KPIs.  
-2. **Data Understanding & Assessment** – Explore dataset structure, check data quality, missing values, duplicates, and understand granularity.  
-3. **Data Cleaning & Preparation** – Standardize, clean, and enrich data; create derived features for analysis.  
-4. **KPI Calculation & Analysis** – Compute key business KPIs (Sales, Profit, Quantity, Profit Margin), analyze trends, top customers, products, and regions.  
-5. **Dashboard Development & Visualization** – Build an interactive Power BI dashboard for executive, regional, and profitability analysis.
-
-This project reflects real-world retail analytics challenges and solutions, suitable for portfolio presentation or professional demonstration.
+> **Note:** Duplicate rows were identified in the dataset. As there is no unique Product ID, a composite key using `Order ID` and `Product Name` was applied to remove duplicates, ensuring accurate KPI aggregation and consistent dashboard metrics.
 
 ---
 
@@ -40,47 +39,46 @@ Retail_Sales_Analytics/
 └── README.md
 ```
 
-> All files are fully documented and organized for each phase of the project.
+All files are fully documented and organized for each phase of the project.
 
 ---
 
 ## 🔹 Phase Details & Highlights
 
-### **Phase 1 – Problem Understanding**
+### Phase 1 – Problem Understanding
 - **Objective:** Address inconsistent and incomplete sales data from POS, online store, and branch systems. Enable better decision-making for managers.  
-- **Stakeholders:** Store Managers, Marketing Team, Inventory Team.  
-- **Activity Diagram:**  
+- **Stakeholders:** Store Managers, Marketing Team, Inventory Team.
+- - **Activity Diagram:**  
 ![Activity Diagram](./ActivityDiagram.jpg)
 
-**Key Goals:**
-- Clean and consolidate sales data  
-- Analyze sales trends across branches and categories  
-- Identify top customers and products  
-- Provide actionable insights via dashboard
-
+- **Key Goals:**
+  - Clean and consolidate sales data  
+  - Analyze sales trends across branches and categories  
+  - Identify top customers and products  
+  - Provide actionable insights via dashboard  
 ---
 
-### **Phase 2 – Data Understanding & Assessment**
-- **Dataset Structure:**  
-  - **Orders:** Order ID, Order Date, Ship Date, Ship Mode  
-  - **Customers:** Customer ID, Name, Segment  
-  - **Geography:** Country, Region, State, City, Postal Code  
-  - **Products:** Category, Sub-Category, Product Name  
-  - **Metrics:** Sales, Quantity, Discount, Profit  
+### Phase 2 – Data Understanding & Assessment
+- **Dataset Structure:**
+  - Orders: `Order ID`, `Order Date`, `Ship Date`, `Ship Mode`  
+  - Customers: `Customer ID`, Name, Segment  
+  - Geography: Country, Region, State, City, Postal Code  
+  - Products: Category, Sub-Category, Product Name  
+  - Metrics: Sales, Quantity, Discount, Profit  
 
-- **Observations:**  
+- **Observations:**
   - Minor missing values (Postal Code)  
-  - No full duplicate rows; repeated Order IDs due to line-item granularity  
-  - Dataset is ready for cleaning and KPI calculation  
+  - Duplicate line items exist due to granularity; handled in cleaning phase  
+  - Dataset ready for KPI calculation and visualization  
 
 **Visualization:**  
 ![Dataset Treemap](./images/phase2_treemap.png)
 
 ---
 
-### **Phase 3 – Data Cleaning & Preparation**
-- **Cleaning Actions:**  
-  - Missing Postal Codes replaced with "Unknown"  
+### Phase 3 – Data Cleaning & Preparation
+- **Cleaning Actions:**
+  - Missing Postal Codes replaced with `"Unknown"`  
   - Trimmed whitespaces and standardized text fields  
   - Converted dates and numeric fields for analytics  
   - Validated line-item granularity for aggregation  
@@ -92,30 +90,30 @@ Retail_Sales_Analytics/
 
 ### Phase 4 – KPI Calculation & Analysis
 
-**SQL-based KPI Calculations:**
+**Key Highlights:**
 
-| KPI               | Value      |
-| ----------------- | ---------- |
-| Total Sales       | 475,578.99 |
-| Total Profit      | 108,482.59 |
-| Total Quantity    | 4,636      |
-| Average Discount  | 15.6%      |
-| Profit Margin     | 22.8%      |
+- **Duplicate Handling:** Applied composite key (`Order ID` + `Product Name`) to remove duplicate rows, ensuring accurate KPI values in SQL and Power BI.  
 
+#### Example KPIs:
 
-**Note:** SQL KPIs (Phase 4) cover the full dataset, whereas the Dashboard (Phase 5) is filtered for **Jan 2021 – May 2022** to focus on recent strategic trends.
+| KPI | Value |
+|-----|-------|
+| Total Sales | 256,646.38 |
+| Total Profit | 58,577.34 |
+| Total Quantity | 2,525 |
+| Average Discount | 15.6% |
+| Profit Margin | 22.8% |
 
-**Insights:**
-- Top-selling product: Office Supplies – Bookcase
-- High-profit but lower sales: Furniture – Bookcase
-- Highest sales region: West; lowest: South
-- Some customers show negative profits (returns/high discounts)
-- Monthly trends indicate seasonal fluctuations
+- **Insights:**
+  - Top-selling product: Furniture – Phone  
+  - High-profit but lower sales: Furniture – Bookcase  
+  - Highest sales region: West; lowest: South  
+  - Some customers show negative profits (returns/high discounts)  
+  - Monthly trends indicate seasonal fluctuations  
 
-
-- **Additional KPI Analysis:**  
-  - Profit Margin by Category: Office Supplies > Technology > Furniture  
-  - Segment Discount Analysis: ~15% across Corporate, Home Office, Consumer
+- **Additional KPI Analysis:**
+  - Profit Margin by Category: Office Supplies > Furniture > Technology  
+  - Segment Discount Analysis: ~15% across Consumer, Corporate, Home Office  
 
 ---
 
@@ -141,26 +139,22 @@ Retail_Sales_Analytics/
 
 ---
 
-## 📊 Key Outcomes & Strategic Insights
+### 📊 Key Outcomes & Strategic Insights
+- **Logistics Efficiency:** First Class shipping has a lower profit margin (~21%) despite high volume; potential for cost optimization.  
+- **Product Profitability:** "Bookcases" and "Chairs" identified as top-tier margin contributors.  
+- **Data Integrity:** Fully cleaned and validated dataset with consistent KPI tracking between SQL and Power BI.  
+- **Decision Support:** Interactive dashboard providing actionable insights for logistics, marketing, and inventory teams.  
 
-- **Logistics Efficiency:** Identified that **First Class** shipping has a lower profit margin (~21%) despite high volume, suggesting a need for cost optimization.
-- **Product Profitability:** "Bookcases" and "Chairs" were identified as top-tier margin contributors.
-- **Data Integrity:** Fully cleaned and validated dataset with consistent KPI tracking between SQL and Power BI.
-- **Decision Support:** Interactive dashboard providing actionable insights for logistics, marketing, and inventory teams.
-  
 ---
 
-## 🚀 Future Work / Phase 6
-
+### 🚀 Future Work / Phase 6
 - Advanced analytics: sales forecasting, RFM customer segmentation, scenario analysis  
 - Enhanced dashboard for predictive insights and operational recommendations  
 
 ---
 
-## 📬 Contact / More Info
+### 📬 Contact / More Info
+This project is part of my Data Analytics Portfolio.  
+For inquiries or collaboration: **sadeghian.mz@gmail.com**  
 
-This project is part of my **Data Analytics Portfolio**.  
-For inquiries or collaboration, contact me via sadeghian.mz@gmail.com.
-
----
-“© 2025 Mojesadi – Portfolio Project. Do not reuse without permission.”
+> “© 2025 Mojesadi – Portfolio Project. Do not reuse without permission.”
