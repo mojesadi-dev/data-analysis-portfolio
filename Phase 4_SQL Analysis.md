@@ -26,17 +26,24 @@ The objective of Phase 4 is to analyze the cleaned dataset and calculate the mai
 SELECT 
     SUM(Sales) AS Total_Sales,
     SUM(Profit) AS Total_Profit,
-    SUM(Quantity) AS Total_Quantity,
-    AVG(Discount) AS Avg_Discount,
-    SUM(Profit)/SUM(Sales) AS Profit_Margin
-FROM Cleaned_Sales;
+    SUM(Quantity) AS Total_Quantity
+FROM (
+    SELECT DISTINCT 
+        [Order ID], 
+        [Product Name], 
+        Sales, 
+        Profit, 
+        Quantity
+    FROM Cleaned_Sales
+) t;
 ```
 # KPI Analysis
 
 **Output:**  
 | Total_Sales | Total_Profit | Total_Quantity | Avg_Discount | Profit_Margin |
 |-------------|-------------|----------------|--------------|---------------|
-| 256012.18   | 108482.59   | 4636           | 0.15625      | 0.2281        |
+| 256646.38   | 58577.34   | 2525           | 0.15625      | 0.2281        |
+256646.38	58577.34	2525
 
 **Insight / Observation:**  
 - Total sales: 475,578.99  
@@ -289,6 +296,13 @@ GROUP BY Category, Sub_Category;
 - *Phones* generate high sales volume but rank **4th in profitability**, showing that high revenue does not always mean high margins.  
 - *Paper* is the **top high-margin sub-category (Rank #1)** in Office Supplies; focusing marketing efforts here can maximize net profit.
 ---
+
+### Data Quality & Assumptions
+
+During KPI validation, duplicated transactional records were identified.
+As the dataset lacks a unique Product ID, Order ID and Product Name were used
+as a composite key to remove duplicated rows and ensure accurate KPI aggregation.
+
 
 ✅ Phase 4 Outcome
 All key KPIs have been calculated (SQL queries to be added). Outputs are ready for analysis and dashboard visualization. Phase 4 documentation is complete and structured consistently with previous phases.
