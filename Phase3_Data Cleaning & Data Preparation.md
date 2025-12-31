@@ -74,7 +74,7 @@ All KPI calculations (Total Sales, Profit, Quantity) are performed at the line-i
 | Sales             | Numeric (Decimal) |
 | Profit            | Numeric (Decimal) |
 | Quantity          | Integer |
-| Discount          | Decimal (0–1 range) |
+| Discount          | Decimal (0-1 range) |
 | Postal Code       | Text (preserve leading zeros) |
 
 This ensures compatibility with time-based analysis and BI tools.
@@ -106,7 +106,7 @@ Prevents duplicated categories and ensures clean filtering in dashboards.
 
 To support trend analysis and KPI reporting, the following derived fields were created:
 
-| Derived Column       | Description |
+|Derived Column      |Description |
 |--------------------|-------------|
 | Order Year          | Year extracted from Order Date |
 | Order Month         | Month name derived from Order Date |
