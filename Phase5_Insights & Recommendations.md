@@ -49,7 +49,7 @@ The dashboard consists of **four main pages**, each designed for a specific busi
 - **Logistics Efficiency:** A Combo Chart (Total Sales & Avg Profit Margin by Ship Mode) visualizing the correlation between shipping speed and net profitability.
 - **Sub-Category Ranking:** A ranked bar chart identifying the most profitable niches, directly visualizing the SQL Ranking (KPI 9) analysis.
 - **Key Findings:** Highlighting the margin drop in "First Class" shipping (approx. 21%) and the top-tier profitability of "Bookcases" and "Chairs".
-  
+  ![Advanced Insights](images/Advanced%20Insights.png)
 ---
 
 ## ⚙️ Technical Design Elements
