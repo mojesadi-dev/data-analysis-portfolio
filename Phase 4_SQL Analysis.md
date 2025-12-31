@@ -36,7 +36,7 @@ FROM Cleaned_Sales;
 **Output:**  
 | Total_Sales | Total_Profit | Total_Quantity | Avg_Discount | Profit_Margin |
 |-------------|-------------|----------------|--------------|---------------|
-| 475578.99   | 108482.59   | 4636           | 0.15625      | 0.2281        |
+| 256012.18   | 108482.59   | 4636           | 0.15625      | 0.2281        |
 
 **Insight / Observation:**  
 - Total sales: 475,578.99  
@@ -244,6 +244,8 @@ GROUP BY [Ship Mode];
 | **Same Day** | 1 | 23.04% | 125,707.51 |
 | **Standard Class** | 1 | 25.20% | 123,638.06 |
 | **First Class** | 1 | 22.49% | 105,966.16 |
+
+**Note:** Profit margin is calculated using weighted logic (SUM(Profit) / SUM(Sales)) to ensure accurate profitability analysis at aggregated levels.
 
 **Insight / Observation:** - **Operational Consistency:** All shipping modes maintain an average delay of 1 day, indicating a stable and efficient warehouse processing system.  
 - Profitability Paradox: Second Class shipping yields the highest profit margin (63.32%) despite lower sales volume, suggesting it is the most cost-effective logistics route.  
