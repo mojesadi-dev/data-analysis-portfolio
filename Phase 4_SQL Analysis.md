@@ -230,21 +230,20 @@ GROUP BY Segment;
 **SQL Query:** 
 ```sql
 SELECT 
-    "Ship Mode",
-    AVG("Shipping-Delay") AS Avg_Delay,
-    AVG("Profit-Margin") * 100 AS Avg_Profit_Margin_Percent,
+    [Ship Mode],
+    AVG([Shipping-Delay]) AS Avg_Delay,
+    SUM(Profit) / SUM(Sales) * 100 AS Profit_Margin_Percent,
     SUM(Sales) AS Total_Sales
 FROM Cleaned_Sales
-GROUP BY "Ship Mode"
-ORDER BY Avg_Delay DESC;
+GROUP BY [Ship Mode];
 ```
 **Output:** 
 | Ship Mode | Avg Delay (Days) | Avg Profit Margin % | Total Sales |
 | :--- | :---: | :---: | :--- |
-| **Second Class** | 1 | 63.32% | 105,966.16 |
-| **Same Day** | 1 | 53.27% | 125,707.51 |
-| **Standard Class** | 1 | 52.72% | 123,638.06 |
-| **First Class** | 1 | 35.94% | 120,267.26 |
+| **Second Class** | 1 | 20.38% | 120,267.26 |
+| **Same Day** | 1 | 23.04% | 125,707.51 |
+| **Standard Class** | 1 | 25.20% | 123,638.06 |
+| **First Class** | 1 | 22.49% | 105,966.16 |
 
 **Insight / Observation:** - **Operational Consistency:** All shipping modes maintain an average delay of 1 day, indicating a stable and efficient warehouse processing system.  
 - Profitability Paradox: Second Class shipping yields the highest profit margin (63.32%) despite lower sales volume, suggesting it is the most cost-effective logistics route.  
@@ -254,31 +253,34 @@ ORDER BY Avg_Delay DESC;
 **SQL Query:**  
 ```sql
 SELECT 
-    Category, 
-    Sub_Category, 
-    AVG("Profit-Margin") AS Avg_Margin,
-    RANK() OVER (PARTITION BY Category ORDER BY AVG("Profit-Margin") DESC) as Margin_Rank
+    Category,
+    Sub_Category,
+    SUM(Profit) / SUM(Sales) AS Profit_Margin,
+    RANK() OVER (
+        PARTITION BY Category 
+        ORDER BY SUM(Profit) / SUM(Sales) DESC
+    ) AS Margin_Rank
 FROM Cleaned_Sales
 GROUP BY Category, Sub_Category;
 ```
 **Output:** 
 | Category | Sub-Category | Avg Margin | Margin Rank |
 | :--- | :--- | :--- | :--- |
-| **Furniture** | Chair | 1.0268 | 1 |
-| **Furniture** | Table | 0.7141 | 2 |
-| **Furniture** | Bookcase | 0.6572 | 3 |
-| **Furniture** | Paper | 0.6100 | 4 |
-| **Furniture** | Phone | 0.2389 | 5 |
-| **Office Supplies** | Paper | 0.5498 | 1 |
-| **Office Supplies** | Chair | 0.4778 | 2 |
-| **Office Supplies** | Bookcase | 0.4359 | 3 |
-| **Office Supplies** | Table | 0.4355 | 4 |
-| **Office Supplies** | Phone | 0.3552 | 5 |
-| **Technology** | Bookcase | 0.5923 | 1 |
-| **Technology** | Chair | 0.5661 | 2 |
-| **Technology** | Paper | 0.4630 | 3 |
-| **Technology** | Phone | 0.3493 | 4 |
-| **Technology** | Table | 0.2944 | 5 |
+| **Furniture** | Bookcase	0.28 | 1 |
+| **Furniture** | Paper	0.23 | 2 |
+| **Furniture** | Chair	0.21 | 3 |
+| **Furniture** | Phone	0.19 | 4 |
+| **Furniture** | Table	0.14 | 5 |
+| **Office Supplies	Table** | 0.25 | 1 |
+| **Office Supplies	Phone** | 0.25 | 2 |
+| **Office Supplies	Chair** | 0.24 | 3 |
+| **Office Supplies	Bookcase** | 0.23 | 4 |
+| **Office Supplies	Paper** | 0.23 | 5 |
+| **Technology	Bookcase** | 0.25 | 1 |
+| **Technology	Chair** | 0.24 | 2 |
+| **Technology	Phone** | 0.23 | 3 |
+| **Technology	Paper** | 0.20 | 4 |
+| **Technology	Table** | 0.20 | 5 |
 
 **Insight / Observation:**  
 - *Chairs* (Furniture) and *Bookcases* (Technology) are the most profitable niches, ranking **#1 in their categories by margin**.  
