@@ -155,6 +155,6 @@ All files are fully documented and organized for each phase of the project.
 
 ### 📬 Contact / More Info
 This project is part of my Data Analytics Portfolio.  
-For inquiries or collaboration: **sadeghian.mz@gmail.com** or **mojesadi@gmail.com**
+For inquiries or collaboration: **mojesadi@gmail.com**
 
 > “© 2025 Mojesadi – Portfolio Project. Do not reuse without permission.”
