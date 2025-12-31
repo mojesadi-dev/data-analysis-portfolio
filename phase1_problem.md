@@ -47,7 +47,7 @@ The goal of this project is to:
 ![Activity Diagram](ActivityDiagram.jpg)
 ---
 
-### ✅ Outcome of Phase 2
+### ✅ Outcome of Phase 1
 This document represents Problem Understanding & Initial Analysis of the Retail Sales Analytics project.
 All data, KPIs, and workflow details are preliminary and will be refined in the next phases.
-The project is now ready to proceed to **Phase 3 – Data analysis**.
+The project is now ready to proceed to **Phase 2 – Data analysis**.
